@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  height: 450px; 
+  border: groove;
+
+  
+}
+
+.dotted {
+	border-top: 5px dotted purple;
+}
+
+.column2 {
+  vertical-align: middle;
+  float: right;
+  width: 48%;
+  padding-left: 0px;
+  height: 380px;
+  border: 5px solid grey;
+  border-radius: 20px;
+  
+}
+
+#chris {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+background-color: #a80505;
+}
+
+#red {
+border: 5px solid black;
+border-radius: 20px;
+height: 390px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Homework</h2>
+
+<div class="row">
+  <div class="column1" style="background-color:white;">
+    <h2><font color="#E68AA">Jane Doe</h2>
+        <hr class="dotted">
+
+        <p><font color=gray>Web Developer</p>
+        <p><font color=black>Far far away, behind the word mountains, far from the countries Vokalia and Consonanta, there live the blind texts. Separated they live in Bookmarsgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p><font color=black>A small river named Duden flows by their place and supplies it with the necessary regehaha. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+        <h1><i><strong><font color=black>Contact information</strong></i>
+        </h1>
+        <h5 style="border:purple; border-width:5px; border-style:solid;">
+            <ul>
+                
+                <li>Email: <span style="color:green">jane@example.com</span></li>
+                <li>Web: <span style="color:red"><u>https://example.com</span></u></li>
+                <li>Tel: 123 45678</li>
+                
+            </ul>
+        </h5>
+  </div>
+  <div class="column2" style="background-color:red;">
+  <section id="red">
+    <h2><font color=black>Chris Milis</h2>
+    <section id="chris">
+    	<p><img style="float:right; margin-left: 20px; margin-bottom: 20px; margin-top: -25px;" src="millis.png" width="227px" height="227px"/></p>
+        <p><font color=white>80 My Street</p>
+        <p><font color=white>The Tower</p>
+        <p><font color=white>UK</p>
+        <p><font color=white>ZO60 1MU</p>
+        <p><strong><font color=white>Tel</strong> 01234 567 890</p>
+        <p><strong><font color=white>Mail</strong> chrismillis@outlook.com</p>
+            
+    </section>
+    	
+    <h3 style="text-align:center"><font color=black>Editing, writing and web development services</h3>
+    </section>
+    
+  </div>
+</div>
+
+</body>
+</html>
